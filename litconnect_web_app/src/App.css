@@ -292,15 +292,30 @@ body {
 }
 
 /* Popup/search area placeholder */
-.popup-placeholder {
+.popup-placeholder, .searchbar-placeholder {
   margin-top: 32px;
-  padding: 12px 24px;
+  padding: 13px 25px 13px 24px;
   border: 1.5px dashed var(--accent);
-  border-radius: 6px;
+  border-radius: 7px;
   color: var(--accent);
   background: #fff8f4;
-  font-size: 1rem;
+  font-size: 1.01rem;
+  opacity: 0.94;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 2px 12px 0 rgba(239,131,84,0.03);
+}
+
+.searchbar-placeholder {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-style: dotted;
+  color: var(--primary);
+  background: #eef2fc;
+  border-color: var(--panel-border);
+  font-size: 1.01rem;
   opacity: 0.86;
+  letter-spacing: 0.01rem;
 }
 
 /* Responsive adjustments */
