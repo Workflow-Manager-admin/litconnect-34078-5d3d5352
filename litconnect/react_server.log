@@ -104,3 +104,6 @@ ERROR in ./src/App.js 8:0-41
 Module not found: Error: Can't resolve './components/Footer' in '/home/kavia/workspace/code-generation/litconnect-34078-5d3d5352/litconnect/src'
 
 webpack compiled with 1 error
+Compiling...
+Compiled successfully!
+webpack compiled successfully
