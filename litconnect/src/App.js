@@ -1,35 +1,26 @@
 import React from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
+import MainContainer from './components/MainContainer';
+import Footer from './components/Footer';
 
+/**
+ * PUBLIC_INTERFACE
+ * App is the root component for LitConnect.
+ * Responsible for theming, global state, and the primary structure:
+ * - Navbar at the top
+ * - MainContainer as the app's central area
+ * - Optional Footer at the bottom
+ */
 function App() {
   return (
     <div className="app">
-      <nav className="navbar">
-        <div className="container">
-          <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-            <div className="logo">
-              <span className="logo-symbol">*</span> KAVIA AI
-            </div>
-            <button className="btn">Template Button</button>
-          </div>
-        </div>
-      </nav>
-
-      <main>
-        <div className="container">
-          <div className="hero">
-            <div className="subtitle">AI Workflow Manager Template</div>
-            
-            <h1 className="title">litconnect</h1>
-            
-            <div className="description">
-              Start building your application.
-            </div>
-            
-            <button className="btn btn-large">Button</button>
-          </div>
-        </div>
-      </main>
+      {/* Persistent top navigation */}
+      <Navbar />
+      {/* Main interactive container holding side panels and central map/timeline */}
+      <MainContainer />
+      {/* Footer (optional, can be enhanced or removed as needed) */}
+      <Footer />
     </div>
   );
 }
