@@ -1,12 +1,25 @@
 import React from 'react';
 import './App.css';
 
+import SidePanel from './components/SidePanel';
+import BookRelationshipExplorer from './components/BookRelationshipExplorer';
+import AuthorBiographies from './components/AuthorBiographies';
+import HistoricalContextMap from './components/HistoricalContextMap';
+import GeographicalVisualization from './components/GeographicalVisualization';
+import PersonalizedJourneys from './components/PersonalizedJourneys';
+import MapTimeline from './components/MapTimeline';
+import SearchBar from './components/SearchBar';
+import Popup from './components/Popup';
+
 /**
  * LitConnectMainContainer - Central app container for LitConnect
  * Handles structure: fixed top navbar, central interactive region,
  * left/right panels, and stubs for feature/components.
  */
 function App() {
+  // Demo state for Popup and Search
+  const [showPopup] = React.useState(false);
+
   return (
     <div className="app litconnect-main">
       {/* Top Navigation Bar */}
@@ -23,16 +36,8 @@ function App() {
       {/* Main content area with sidebars and central region */}
       <main className="main-layout">
 
-        {/* Left placeholder: Filters/Details */}
-        <aside className="side-panel side-left">
-          {/* PUBLIC_INTERFACE
-              Placeholder for Filters and Details
-           */}
-          <div className="side-placeholder">
-            <span className="panel-title">Filters & Details</span>
-            {/* e.g., FilterSidebar, DetailPanel */}
-          </div>
-        </aside>
+        {/* Left Side Panel (filters, details) */}
+        <SidePanel position="left" />
 
         {/* Central interactive/map/timeline container */}
         <section className="center-interactive">
@@ -45,30 +50,24 @@ function App() {
             </div>
             <button className="btn btn-large btn-accent">Start Exploring</button>
           </div>
-          {/* Placeholders for interactive map/timeline/relationship explorer */}
+          {/* Placeholders for interactive feature components */}
           <div className="feature-placeholders">
-            {/* PUBLIC_INTERFACE
-                Placeholders for core feature components
-             */}
-            <div className="feature-stub book-explorer">[Book Relationship Explorer]</div>
-            <div className="feature-stub author-bio">[Author Biographies Panel]</div>
-            <div className="feature-stub history-map">[Historical Context Mapping]</div>
-            <div className="feature-stub geo-visual">[Geographical Visualization]</div>
-            <div className="feature-stub journeys">[Personalized Literary Journeys]</div>
+            {/* PUBLIC_INTERFACE: Core feature components stubs */}
+            <BookRelationshipExplorer />
+            <AuthorBiographies />
+            <HistoricalContextMap />
+            <GeographicalVisualization />
+            <PersonalizedJourneys />
+            <MapTimeline />
           </div>
-          {/* PUBLIC_INTERFACE
-              Placeholder for popups/modals/search panel
-           */}
-          <div className="popup-placeholder">[Search/Popup overlays here]</div>
+          {/* PUBLIC_INTERFACE: Overlay for search and popups */}
+          <SearchBar />
+          {/* Demo: Popup stub (hidden by default, see showPopup state) */}
+          <Popup visible={showPopup} />
         </section>
 
-        {/* Right placeholder: More actions, contextual info */}
-        <aside className="side-panel side-right">
-          <div className="side-placeholder">
-            <span className="panel-title">Context & Actions</span>
-            {/* e.g., SuggestionsPanel */}
-          </div>
-        </aside>
+        {/* Right Side Panel (context/actions) */}
+        <SidePanel position="right" />
       </main>
     </div>
   );
