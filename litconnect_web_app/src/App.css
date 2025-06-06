@@ -1,13 +1,17 @@
 :root {
-  --primary: #2D3142;
-  --secondary: #BFC0C0;
-  --accent: #EF8354;
-  --background: #f7f7fa;
-  --panel-bg: #ffffff;
+  --primary: #2D3142;      /* App branding, navbar, main text */
+  --secondary: #BFC0C0;    /* Panels, stubs, subtle accents */
+  --accent: #EF8354;       /* Highlight/Call-to-action color */
+  --background: #f7f7fa;   /* App background */
+  --panel-bg: #ffffff;     /* Panel and card background */
   --panel-border: #e4e5e9;
-  --text-main: #222232;
+  --text-main: #1a1d26;
   --text-secondary: #6c6e81;
   --navbar-height: 64px;
+  --stub-bg: #f4f6fa;
+  --stub-border: #e4e9ed;
+  --placeholder-fade: rgba(191,192,192,0.08);
+  --shadow-hover: 0 6px 18px 0 rgba(45,49,66,0.11);
 }
 
 body {
@@ -41,7 +45,8 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1.5px solid var(--panel-border);
-  box-shadow: 0 2px 8px rgba(45, 49, 66, 0.03);
+  box-shadow: 0 4px 18px 0 rgba(45, 49, 66, 0.08);
+  user-select: none;
 }
 
 .navbar-content {
