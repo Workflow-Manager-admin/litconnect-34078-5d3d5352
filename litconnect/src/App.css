@@ -1,18 +1,32 @@
 :root {
-  --base-light: #00ffff;
-  --base-dark: #00008b;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
+  /* LitConnect color palette */
+  --primary: #2D3142;        /* Deep blue-gray */
+  --secondary: #BFC0C0;      /* Light gray */
+  --accent: #EF8354;         /* Vivid orange */
+  --base-light: #ffffff;     /* Clean background for light theme */
+  --base-dark: #F7F7FA;      /* Light neutral for subtle contrast */
+  --text-color: #2D3142;     /* Standard text color */
+  --text-secondary: #444B5D; /* Muted text, slightly lighter than primary */
+  --border-color: #D3D4D6;   /* Light gray border */
+  --shadow-light: 0 2px 8px rgba(44,49,66,0.07);
 }
+
+/* Utility for accent buttons/markers */
+.accent-color { color: var(--accent); }
+.accent-bg { background: var(--accent) !important; color: #fff !important; }
+
+/* Utility for panel backgrounds */
+.bg-panel { background: var(--secondary); }
+
 
 body {
   margin: 0;
   font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  background-color: var(--base-dark);
+  background-color: var(--base-light);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
 .app {
