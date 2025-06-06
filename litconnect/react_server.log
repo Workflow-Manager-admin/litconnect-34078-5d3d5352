@@ -85,3 +85,22 @@ ERROR in ./src/components/MainContainer.js 7:0-60
 Module not found: Error: Can't resolve './CentralMapAndTimeline' in '/home/kavia/workspace/code-generation/litconnect-34078-5d3d5352/litconnect/src/components'
 
 webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve './components/Footer' in '/home/kavia/workspace/code-generation/litconnect-34078-5d3d5352/litconnect/src'
+ERROR in ./src/App.js 8:0-41
+Module not found: Error: Can't resolve './components/Footer' in '/home/kavia/workspace/code-generation/litconnect-34078-5d3d5352/litconnect/src'
+
+ERROR in ./src/components/CentralMapAndTimeline.js 5:0-48
+Module not found: Error: Can't resolve './PopUpContextual' in '/home/kavia/workspace/code-generation/litconnect-34078-5d3d5352/litconnect/src/components'
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve './components/Footer' in '/home/kavia/workspace/code-generation/litconnect-34078-5d3d5352/litconnect/src'
+ERROR in ./src/App.js 8:0-41
+Module not found: Error: Can't resolve './components/Footer' in '/home/kavia/workspace/code-generation/litconnect-34078-5d3d5352/litconnect/src'
+
+webpack compiled with 1 error
