@@ -9,7 +9,17 @@ import React from 'react';
 function MapTimeline() {
   return (
     <div className="feature-stub map-timeline">
-      [Map and Timeline Feature Placeholder]
+      <span style={{
+        marginRight: 10,
+        fontSize: "1.22em",
+        color: "#efa2b5"
+      }}>🗓️</span>
+      <b>Map & Timeline</b>
+      <span style={{
+        fontWeight: 400,
+        opacity: 0.7,
+        marginLeft: 10
+      }}>[Stub – unify maps with timelines for context]</span>
     </div>
   );
 }

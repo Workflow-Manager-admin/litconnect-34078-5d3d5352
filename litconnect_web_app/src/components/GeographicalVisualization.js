@@ -9,7 +9,17 @@ import React from 'react';
 function GeographicalVisualization() {
   return (
     <div className="feature-stub geo-visual">
-      [Geographical Visualization Placeholder]
+      <span style={{
+        marginRight: 10,
+        fontSize: "1.22em",
+        color: "#61D3D3"
+      }}>🗺️</span>
+      <b>Geographical Visualization</b>
+      <span style={{
+        fontWeight: 400,
+        opacity: 0.7,
+        marginLeft: 10
+      }}>[Stub – literary locations on the map]</span>
     </div>
   );
 }
