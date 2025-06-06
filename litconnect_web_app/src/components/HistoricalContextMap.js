@@ -9,7 +9,17 @@ import React from 'react';
 function HistoricalContextMap() {
   return (
     <div className="feature-stub history-map">
-      [Historical Context Mapping Placeholder]
+      <span style={{
+        marginRight: 10,
+        fontSize: "1.25em",
+        color: "#2D3142"
+      }}>🕰️</span>
+      <b>Historical Context Mapping</b>
+      <span style={{
+        fontWeight: 400,
+        opacity: 0.7,
+        marginLeft: 10
+      }}>[Stub – maps works/authors to periods & events]</span>
     </div>
   );
 }
